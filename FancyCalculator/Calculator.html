@@ -2,13 +2,22 @@
 <html>
 <head>
     <script>
+         var showResult = false;
   		function insert(num){
-      		document.form.textview.value = document.form.textview.value + num;
-      	}
+            let exp = document.form.textview.value;
+            if(showResult == true){
+                document.form.textview.value = '';
+                showResult = false;
+            }
+             document.form.textview.value = document.form.textview.value + num;
+        }
       function equal(){
+          
           let inputVal = document.form.textview.value;
               if(inputVal){
+                
                 document.form.textview.value = eval(inputVal);
+                  showResult = true;
               }
           }
         
