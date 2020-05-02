@@ -1,2 +1,2 @@
-# HTML-JavaScript-CSS
+# Web Development
 My Web Projects
